@@ -1,0 +1,29 @@
+body {
+  background-color: mediumaquamarine;
+}
+
+body h1 {
+  color: azure;
+}
+
+body p {
+  color: azure;
+}
+
+.section-cards {
+  background-color: mediumaquamarine;
+  color: azure;
+}
+
+.cards-container {
+  color: azure;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 2em;
+}
+
+@media (min-width: 1200px) {
+  .cards-container {
+    gap: 2em;
+  }
+}

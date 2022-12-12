@@ -1,0 +1,24 @@
+[
+	{
+		"nombre": "producotoABCCCCCCC",
+		"precio": "123",
+		"stock": "3",
+		"marca": "marcaAB",
+		"categoria": "categoriaAB",
+		"detalles": "detalleAB",
+		"foto": "fotoA.jpg",
+		"envio": "true",
+		"id": "1"
+	},
+	{
+		"nombre": "productoH1",
+		"precio": "123",
+		"stock": "2",
+		"marca": "marca H1",
+		"categoria\n": "categoria H1",
+		"detalles": "datelle H1",
+		"foto": "fotoH1.jpg",
+		"envio": "true",
+		"id": 2
+	}
+]

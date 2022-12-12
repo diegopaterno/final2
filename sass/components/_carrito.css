@@ -1,0 +1,143 @@
+@charset "UTF-8";
+.section-carrito {
+  display: none;
+  position: fixed;
+  background-color: mediumturquoise;
+  z-index: 1;
+  top: 150px;
+  left: 150px;
+  right: 150px;
+  bottom: 150px;
+  box-shadow: 0.3em 0.3em 10em 0.3em black;
+  /***********************/
+  /* TABLA DE PRODUCTOS */
+  /*********************/
+  /******************************/
+  /* BOTÓN PARA CERRAR CARRITO */
+  /*****************************/
+  /******************************/
+  /* COMPRAR CARRITO            */
+  /*****************************/
+}
+
+.section-carrito--visible {
+  display: block;
+}
+
+.section-carrito::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-100%);
+  background-color: mediumseagreen;
+  opacity: 0.5;
+}
+
+.section-carrito--visible {
+  display: block;
+}
+
+.section-carrito__table {
+  table-layout: fixed;
+  width: 100%;
+  margin-block: 1em;
+  font-size: .8rem;
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media all and (min-width: 768px) {
+  .section-carrito__table {
+    font-size: .9rem;
+  }
+}
+
+.section-carrito__table td,
+.section-carrito__table th {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  padding-block: 6px;
+}
+
+.section-carrito__table td > img {
+  max-width: 48px;
+  aspect-ratio: 2 / 1;
+}
+
+.section-carrito__table__title {
+  color: azure;
+  background-color: purple;
+}
+
+.section-carrito__table tr:nth-child(even) {
+  backdrop-filter: brightness(90%);
+}
+
+.section-carrito__button,
+.section-carrito .btn__enviarCarrito {
+  text-transform: capitalize;
+}
+
+.section-carrito .btn__enviarCarrito {
+  background-color: purple;
+  color: azure;
+  padding: 4px 8px;
+}
+
+.section-carrito__button {
+  width: 80%;
+  background-color: purple;
+  color: azure;
+  padding: 4px;
+}
+
+.section-carrito__placeholder-title, .section-carrito__placeholder-subtitle {
+  font-weight: 300;
+  text-align: center;
+}
+
+.section-carrito__placeholder-title {
+  color: #666666;
+  margin-top: 2em;
+}
+
+.section-carrito__placeholder-subtitle {
+  color: #999999;
+  font-size: 1.25rem;
+}
+
+.section-carrito > .btn--close {
+  color: azure;
+  background-color: purple;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  aspect-ratio: 1/1;
+  padding: 0px;
+  text-indent: -9999px;
+  font-size: 1px;
+  background-image: url(/img/productos/4115230_cancel_close_delete_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-carrito__submit-confirmation-img-container {
+  margin: 1em auto;
+  width: 50%;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
